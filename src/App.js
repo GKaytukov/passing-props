@@ -1,15 +1,15 @@
 import Welcome from "./components/Welcome";
 
-const names = ['Brad', 'Gabby', 'Art', 'Gerly']
+const names = ['Brad', 'Gabby', 'Art', 'Gerly', 'Jonathan']
 function App() {
   return (
     <>
     <h1>Passing Props</h1>
     {names.map(name => (
-      <Welcome name="Fanessa" />
+      <Welcome name='Fanessa' />
       <Welcome name={name[4]} />
       <hr />
-      {name.map(fname => ( 
+      {names.map(fname => ( 
         <Welcome key={fname} name={fname} />
 
       ))}
